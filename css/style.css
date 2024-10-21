@@ -1,0 +1,112 @@
+:root{
+  --neutral:#525252;
+  --indigo:#4338CA;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans",sans-serif;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(50%);
+  font-size: 1rem;
+}
+
+section{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin:1rem 0;
+}
+
+button{
+  border-radius: 4px;
+  border: none;
+  font-weight: 600;
+  font-family: "Noto Sans",sans-serif;
+  text-align: center;
+  padding:.5rem 1rem;
+  box-shadow: 1px 1px 3px var(--neutral);
+}
+
+.primary-btn{
+  background-color: var(--indigo);
+  color: white;
+}
+
+.primary-btn:hover{
+  background-color: #2a2194;
+}
+
+.secondary-btn{
+  background-color: white;
+}
+
+.secondary-btn:hover{
+  background-color: whitesmoke;
+}
+
+.primary-transparent-btn,.secondary-transparent-btn{
+  background-color: white;
+  color: var(--indigo);
+  box-shadow: none;
+}
+
+.disable-btn{
+  background-color: white;
+  color: var(--neutral);
+  box-shadow: none;
+}
+
+.remove-btn{
+  background-color: rgb(222, 9, 9);
+  color: white;
+}
+
+.remove-btn:hover{
+  background-color: rgb(195, 8, 8);
+}
+
+.primary-btn:nth-child(1),.secondary-btn:nth-child(1),.primary-transparent-btn:nth-child(1),.secondary-transparent-btn:nth-child(1),.disable-btn:nth-child(1),.remove-btn:nth-child(1){
+  font-size: 14px;
+}
+
+.primary-btn:nth-child(2),.primary-btn:nth-child(3),.secondary-btn:nth-child(2),.secondary-btn:nth-child(3),.primary-transparent-btn:nth-child(2),.primary-transparent-btn:nth-child(3),.secondary-transparent-btn:nth-child(2),.disable-btn:nth-child(2),.secondary-transparent-btn:nth-child(3),.disable-btn:nth-child(3),.remove-btn:nth-child(2),.remove-btn:nth-child(3){
+  font-size: 16px;
+}
+
+.primary > .primary-btn:nth-child(4), .secondary > .secondary-btn:nth-child(4),.primary-transparent> .primary-transparent-btn:nth-child(4),.secondary-transparent-btn:nth-child(4),.disable-btn:nth-child(4), .remove > .remove-btn:nth-child(4) {
+  font-size: 20px;
+}
+
+.primary > .primary-btn:nth-child(5),.secondary > .secondary-btn:nth-child(5), .primary-transparent> .primary-transparent-btn:nth-child(5),.secondary-transparent-btn:nth-child(5),.disable-btn:nth-child(5), .remove > .remove-btn:nth-child(5){
+  font-size: 20px;
+}
+
+.secondary-transparent,.disable{
+  display: flex;
+  justify-content: start;
+  margin: 1rem;
+}
+
+.credits {
+  color: #777;
+  position: absolute;
+  top: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
