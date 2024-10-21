@@ -43,16 +43,18 @@ button{
   color: white;
 }
 
-.primary-btn:hover{
+.primary-btn:hover,.primary-btn:focus{
   background-color: #2a2194;
+  outline: 3px solid skyblue;
 }
 
 .secondary-btn{
   background-color: white;
 }
 
-.secondary-btn:hover{
+.secondary-btn:hover,.secondary-btn:focus{
   background-color: whitesmoke;
+  outline: 3px solid gainsboro;
 }
 
 .primary-transparent-btn,.secondary-transparent-btn{
@@ -72,8 +74,9 @@ button{
   color: white;
 }
 
-.remove-btn:hover{
+.remove-btn:hover,.remove-btn:focus{
   background-color: rgb(195, 8, 8);
+  outline: 3px solid rgb(251, 48, 48);
 }
 
 .primary-btn:nth-child(1),.secondary-btn:nth-child(1),.primary-transparent-btn:nth-child(1),.secondary-transparent-btn:nth-child(1),.disable-btn:nth-child(1),.remove-btn:nth-child(1){
